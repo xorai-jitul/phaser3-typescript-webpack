@@ -2,7 +2,7 @@
   "name": "phaser3-typescript-webpack",
   "version": "1.0.0",
   "description": "",
-  "author": "troyedwardsjr",
+  "author": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack",
