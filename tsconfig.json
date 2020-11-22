@@ -2,13 +2,18 @@
 	"compilerOptions": {
 		"target": "es5",
 		"module": "commonjs",
-		"sourceMap": true,
+		"strict": true,
+		"noImplicitAny": true,
 		"esModuleInterop": true,
-		"allowSyntheticDefaultImports": true
+		"allowUnreachableCode": false,
+		"sourceMap": true,
+		"strictPropertyInitialization": false,
+		"typeRoots": ["node_modules/@types", "src/typings"],
+		"lib": ["dom", "es5", "esnext", "scripthost"],
+		"baseUrl": "./",
+		"paths": {
+			"@src/*": ["src/*"]
+		}
 	},
-	
-	"files": [
-		"src/phaser.d.ts",
-		"src/main.ts"
-	]
+	"include": ["src/**/*.ts"]
 }
